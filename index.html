@@ -10,31 +10,66 @@
 </head>
 
 <body>
-    <header>
-        <div id="headerDiv"></div>
-    </header>
-    <img src="fern.avif" alt="fern plant">
-    <a href="https://unsplash.com/@haliewestphoto">Photo by Halie West on Unsplash</a>
-    <p>This is not a real online service! You know you need something like this in your life to help you realize your
-        deepest dreams. Sign up <em>now</em> to get started.</p>
-    <p>You <em>know</em> you want to.</p>
-    <form>
-        <header>Let's do this!</header>
-        <label for="firstName">FIRST NAME</label>
-        <input name="firstName" type="text">
-        <label for="lastName">LAST NAME</label>
-        <input name="lastName" type="text">
-        <label for="email">EMAIL</label>
-        <input name="email" type="email">
-        <label for="phoneNumber">PHONE NUMBER</label>
-        <input name="phoneNumber" type="number" maxlength="10">
-        <label for="password">PASSWORD</label>
-        <input name="password" type="password">
-        <label for="confirmPassword">CONFIRM PASSWORD</label>
-        <input name="confirmPassword" type="password">
-        <input type="submit" id="submitButton">
-    </form>
-    <p>Already have an account? <a href="login.html">Log in</a></p>
+    <div id="headerDiv"> </div>
+    <div id="bodyFrame">
+        <div id="imageFrame">
+            <a href="https://unsplash.com/@haliewestphoto" id="credit">Photo by Halie West on Unsplash</a>
+        </div>
+        <div id="mainContainer">
+            <p id="advertCall">This is not a real online service! You know you need something like this in your life to
+                help you realize
+                your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p id="taunt">You <em>know</em> you want to.</p>
+            <form id="formContainer">
+                <table id="formTable">
+                    <th>Let's do this!</th>
+                    <tr>
+                        <td>
+                            <header><label for="firstName" required>FIRST NAME</label></header>
+                            <input name="firstName" type="text">
+                        </td>
+                        <td>
+                            <header><label for="lastName" required>LAST NAME</label></header>
+                            <input name="lastName" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <header><label for="email">EMAIL</label></header>
+                            <input name="email" type="email" required>
+                        </td>
+                        <td>
+                            <header><label for="phoneNumber">PHONE NUMBER</label></header>
+                            <input name="phoneNumber" type="number" maxlength="10" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <header><label for="password">PASSWORD</label></header>
+                            <input name="password" type="password" required>
+                        </td>
+                        <td>
+                            <header><label for="confirmPassword">CONFIRM PASSWORD</label></header>
+                            <input name="confirmPassword" type="password" required>
+                        </td>
+                    </tr>
+                    <br>
+                    <tr>
+                        <td>
+                            <input type="submit" id="submitButton" value="Create Account">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Already have an account? <a href="login.html">Log in</a></p>
+                        </td>
+                    </tr>
+
+                </table>
+            </form>
+
+        </div>
+    </div>
     <footer>
         <div id="footerDiv"></div>
     </footer>
