@@ -26,43 +26,55 @@
             <p id="taunt">You <em>know</em> you want to.</p>
             <form id="formContainer">
                 <table id="formTable">
+
+                    <colgroup>
+                        <col>
+                        <col>
+                    </colgroup>
+
                     <th id="tableHead">Let's do this!</th>
                     <tr>
                         <td>
-                            <header><label for="firstName" required>FIRST NAME</label></header>
-                            <input name="firstName" type="text">
+                            <header><label for="firstName">FIRST NAME</label></header>
+                            <input class="userInput" name="firstName" type="text" required>
                         </td>
                         <td>
-                            <header><label for="lastName" required>LAST NAME</label></header>
-                            <input name="lastName" type="text">
+                            <header><label for="lastName">LAST NAME</label></header>
+                            <input class="userInput" name="lastName" type="text" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <header><label for="email">EMAIL</label></header>
-                            <input name="email" type="email" required>
+                            <input class="userInput" name="email" type="email" required>
                         </td>
                         <td>
                             <header><label for="phoneNumber">PHONE NUMBER</label></header>
-                            <input name="phoneNumber" type="tel" required>
+                            <input class="userInput" name="phoneNumber" type="tel" min-length="10" required>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <header><label for="password">PASSWORD</label></header>
-                            <input name="password" type="password" required>
+                            <input class="userInput" name="password" type="password" required>
                         </td>
                         <td>
                             <header><label for="confirmPassword">CONFIRM PASSWORD</label></header>
-                            <input name="confirmPassword" type="password" required>
+                            <input class="userInput" name="confirmPassword" type="password" required>
                         </td>
                     </tr>
-                    <br>
+                    <tr>
+                        <td>
+                            <hr>
+                        </td>
+
+                    </tr>
                     <tr>
                         <td>
                             <input type="submit" id="submitButton" value="Create Account">
                         </td>
                     </tr>
+
                     <tr>
                         <td>
                             <p>Already have an account? <a href="login.html">Log in</a></p>
