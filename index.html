@@ -13,6 +13,10 @@
     <div id="headerDiv"> </div>
     <div id="bodyFrame">
         <div id="imageFrame">
+            <div id="banner">
+                <img src="odin-lined.png">
+                <p>Odin</p>
+            </div>
             <a href="https://unsplash.com/@haliewestphoto" id="credit">Photo by Halie West on Unsplash</a>
         </div>
         <div id="mainContainer">
@@ -22,7 +26,7 @@
             <p id="taunt">You <em>know</em> you want to.</p>
             <form id="formContainer">
                 <table id="formTable">
-                    <th>Let's do this!</th>
+                    <th id="tableHead">Let's do this!</th>
                     <tr>
                         <td>
                             <header><label for="firstName" required>FIRST NAME</label></header>
@@ -40,7 +44,7 @@
                         </td>
                         <td>
                             <header><label for="phoneNumber">PHONE NUMBER</label></header>
-                            <input name="phoneNumber" type="number" maxlength="10" required>
+                            <input name="phoneNumber" type="tel" required>
                         </td>
                     </tr>
                     <tr>
